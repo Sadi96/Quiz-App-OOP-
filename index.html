@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1d595fc26e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="quiz-app">
+        <header id="heading-box">
+            <div id="header-container">
+                <div id="results-box">
+                    <div id="correct-answers">
+                        <i class="fas fa-check"></i>
+                        <span id="correct-counter" class="counter-span">0</span>
+                        <span class="result-info-span">prawidłowych</span>
+                    </div>
+                    <div id="wrong-answers">
+                        <i class="fas fa-times"></i>
+                        <span id="wrong-counter" class="counter-span">0</span>
+                        <span class="result-info-span">nieprawidłowych</span>
+                    </div>
+                </div>
+                <div id="timer-box">
+                    <i class="far fa-clock"></i>
+                    <span id="timer-span" class="counter-span">
+                        <span id="minutes">--</span>:<span id="seconds">--</span>
+                    </span>
+                </div>
+            </div>
+        </header>
+        <div id="quiz-box">
+            <div id="heading-section">
+                <h1 id="question-heading">Pytanie <span id="question-number">-</span> (pozostało <span id="remaining-questions">--</span>)</h1>
+                <p id="question">Naciśnij przycisk na dole ekranu, aby rozpocząć grę.</p>
+            </div>
+            <div id="answers-section">
+                <h1 id="answers-heading">Odpowiedzi:</h1>
+                <div id="a-answer" class="answer-box">
+                    <span class="answer-letter">A</span>
+                    <span class="answer">---</span>
+                </div>
+                <div id="b-answer" class="answer-box">
+                    <span class="answer-letter">B</span>
+                    <span class="answer">---</span>
+                </div>
+                <div id="c-answer" class="answer-box">
+                    <span class="answer-letter">C</span>
+                    <span class="answer">---</span>
+                </div>
+                <div id="d-answer" class="answer-box">
+                    <span class="answer-letter">D</span>
+                    <span class="answer">---</span>
+                </div>
+            </div>
+        </div>
+        <div id="button">
+            <button id="new-game-button">Rozpocznij grę!</button>
+        </div>
+    </section>
+    <section id="message-box-wrapper">
+        <div id="message-box">
+            <p id="message-paragraph"></p>
+            <button id="message-button">OK!</button>
+        </div>
+    </section>
+    <script src="questions.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
