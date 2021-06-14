@@ -1,0 +1,26 @@
+{
+  "name": "quiz-app---oop---v2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sadi96/Quiz-App-OOP-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sadi96/Quiz-App-OOP-/issues"
+  },
+  "homepage": "https://github.com/Sadi96/Quiz-App-OOP-#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
